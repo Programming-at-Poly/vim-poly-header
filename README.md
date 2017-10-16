@@ -24,6 +24,6 @@ Plug 'vim-poly-header/vim-poly-header'
 
 ## Acknowledgements
 [pbondoer@42.fr](pbondoer@42.fr), for creating the header! <br />
-[https://github.com/pbondoer/vim-42header](vim-42header), the improved  original <br />
+[vim-42header](https://github.com/pbondoer/vim-42header), the improved  original <br />
 [42.fr](https://www.42.fr) <br />
 [42.us](https://www.42.us.org/) <br />
