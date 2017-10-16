@@ -1,4 +1,4 @@
-# vim-42header
+# vim-poly-header
 A vim header for programming projects at Poly, forked from pbondoer's 42header
 
 ![fancy header image](https://imgur.com/lToMWk0.png)
