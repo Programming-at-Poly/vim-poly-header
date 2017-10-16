@@ -1,32 +1,29 @@
 # vim-42header
-a (better) vim header for 42 projects
+A vim header for programming projects at Poly, forked from pbondoer's 42header
 
-![fancy header image](http://i.imgur.com/WTscMvi.png)
+![fancy header image](https://imgur.com/lToMWk0.png)
 
 ## Features
-* Passes `norminette`
 * Elegant trimming of long strings
 * Updates filename line when changed
 * Updates "Updated" line only when buffer is changed
 * Works with all formats that default supports
 * Binds to `F1` for easy access
-* Overrides `:Stdheader` for school vim installs
-
-Also, don't forget to set your `$USER` and `$MAIL` variables, marvin lives!
+* Overrides `:Stdheader`
 
 ## Usage
-Copy `42header.vim` to your `~/.vim/plugin` folder. You're set!
+Copy `poly-header.vim` to your `~/.vim/plugin` folder. Set $USER and $MAIL
 
 ### vim-plug
 If you use vim-plug or any other plugin manager, simply add this line to your
 plugin initialization:
 
 ```vim
-Plug 'pbondoer/vim-42header'
+Plug 'vim-poly-header/vim-poly-header'
 ```
 
-## Why?
-Part of the **Mexican Standoff** rush, I decided to add a few bonus features
-and I now use this as my header for 42 files. On my linux setup, I have changed
-the variable names in order to be able to have my own environment, but still
-have a functional school environment. Feel free to add things :)!
+## Acknowledgements
+[pbondoer@42.fr](pbondoer@42.fr), for creating the header! <br />
+[https://github.com/pbondoer/vim-42header](vim-42header), the improved  original <br />
+[42.fr](https://www.42.fr) <br />
+[42.us](https://www.42.us.org/) <br />
