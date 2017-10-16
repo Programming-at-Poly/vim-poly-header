@@ -1,12 +1,12 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                             |\               "
-"    poly-header.vim                                    ------| \----          "
+"    poly-header.vim                                   ------| \----           "
 "                                                       |    \`  \  |  p       "
 "    By: cshepard6055 <cshepard6055@floridapoly.edu>    |  \`-\   \ |  o       "
 "                                                       |---\  \   `|  l       "
 "    Created: 2017/09/04 12:42:13 by cshepard6055       | ` .\  \   |  y       "
-"    Updated: 2017/10/16 17:17:38 by cshepard6055       -------------          "
+"    Updated: 2017/10/16 17:48:18 by cshepard6055      -------------           "
 "                                                                              "
 " **************************************************************************** "
 "           \"     ------| \-----      ",
@@ -68,7 +68,7 @@ function! s:ascii(n)
 endfunction
 
 function! s:textline(left, right)
-	let l:left = strpart(a:left, 0, s:length - s:margin * 3 - strlen(a:right) + 1)
+	let l:left = strpart(a:left, 0, s:length - s:margin * 3 - strlen(a:right) + 2)
 
 	return s:start . repeat(' ', s:margin - strlen(s:start)) . l:left . repeat(' ', s:length - s:margin * 2 - strlen(l:left) - strlen(a:right)) . a:right . repeat(' ', s:margin - strlen(s:end)) . s:end
 endfunction
