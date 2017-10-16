@@ -1,24 +1,24 @@
 " **************************************************************************** "
 "                                                                              "
-"                                                         :::      ::::::::    "
-"    42header.vim                                       :+:      :+:    :+:    "
-"                                                     +:+ +:+         +:+      "
-"    By: pbondoer <pbondoer@student.42.fr>          +#+  +:+       +#+         "
-"                                                 +#+#+#+#+#+   +#+            "
-"    Created: 2015/12/06 19:39:01 by pbondoer          #+#    #+#              "
-"    Updated: 2017/06/01 11:13:28 by pbondoer         ###   ########.fr        "
+"                                                             |\               "
+"    poly-header.vim                                    ------| \----          "
+"                                                       |    \`  \  |  p       "
+"    By: cshepard6055 <cshepard6055@floridapoly.edu>    |  \`-\   \ |  o       "
+"                                                       |---\  \   `|  l       "
+"    Created: 2017/09/04 12:42:13 by cshepard6055       | ` .\  \   |  y       "
+"    Updated: 2017/10/16 17:17:38 by cshepard6055       -------------          "
 "                                                                              "
 " **************************************************************************** "
+"           \"     ------| \-----      ",
 
-" ty zaz <3
 let s:asciiart = [
-			\"        :::      ::::::::",
-			\"      :+:      :+:    :+:",
-			\"    +:+ +:+         +:+  ",
-			\"  +#+  +:+       +#+     ",
-			\"+#+#+#+#+#+   +#+        ",
-			\"     #+#    #+#          ",
-			\"    ###   ########.fr    "
+            \"      |\\           ",
+            \" ------| \\----      ",
+            \" |    \\`  \\  |  p   ",
+            \" |  \\`-\\   \\ |  o   ",
+            \" |---\\  \\   `|  l   ",
+            \" | ` .\\  \\   |  y   ",
+            \" -------------      "
 			\]
 
 let s:start		= '/*'
@@ -94,7 +94,7 @@ endfunction
 function! s:user()
 	let l:user = $USER
 	if strlen(l:user) == 0
-		let l:user = "marvin"
+		let l:user = "student"
 	endif
 	return l:user
 endfunction
@@ -102,7 +102,7 @@ endfunction
 function! s:mail()
 	let l:mail = $MAIL
 	if strlen(l:mail) == 0
-		let l:mail = "marvin@42.fr"
+		let l:mail = "allstudents@floridapoly.edu"
 	endif
 	return l:mail
 endfunction
