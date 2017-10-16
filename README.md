@@ -12,7 +12,18 @@ A vim header for programming projects at Poly, forked from pbondoer's 42header
 * Overrides `:Stdheader`
 
 ## Usage
-Copy `poly-header.vim` to your `~/.vim/plugin` folder. Set $USER and $MAIL
+Copy `poly-header.vim` to your `~/.vim/plugin` folder. Set $USER and $MAIL <br />
+As a simple fix, you may add the line to your shell profile
+```
+# working command example
+git clone https://github.com/polyprogrammingclub/vim-poly-header
+cd vim-poly-header
+cp plugin/poly-header.vim ~/.vim/plugin
+# replace "myaddress@floridapoly.edu" with your email address
+echo "export MAIL=\"myaddress@floridapoly.edu\"" >> ~/.cshrc
+echo "export MAIL=\"myaddress@floridapoly.edu\"" >> ~/.zshrc
+echo "export MAIL=\"myaddress@floridapoly.edu\"" >> ~/.bashrc
+```
 
 ### vim-plug
 If you use vim-plug or any other plugin manager, simply add this line to your
