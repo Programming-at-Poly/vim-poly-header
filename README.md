@@ -12,6 +12,13 @@ A vim header for programming projects at Poly, forked from pbondoer's 42header
 * Overrides `:Stdheader`
 
 ## Usage
+In ember, simply
+```
+git clone https://github.com/polyprogrammingclub/vim-poly-header
+cd vim-poly-header
+/bin/bash ember_install.sh
+```
+
 Copy `poly-header.vim` to your `~/.vim/plugin` folder. Set $USER and $MAIL <br />
 As a simple fix, you may add the line to your shell profile
 ```
