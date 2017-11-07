@@ -1,3 +1,4 @@
+#!/bin/bash
 # **************************************************************************** #
 #                                                                              #
 #                                                             |\               #
@@ -22,6 +23,9 @@ cp .vimrc ~/.vimrc
 # install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# install header
+cp plugin/poly-header.vim ~/.vim/plugin
 
 # set $MAIL environment variable
 echo "export MAIL=$(whoami)@floridapoly.edu" >> ~/.bashrc

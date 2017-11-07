@@ -1,3 +1,4 @@
+#!/bin/bash
 # **************************************************************************** #
 #                                                                              #
 #                                                             |\               #
@@ -6,14 +7,26 @@
 #    By: cshepard6055 <cshepard6055@floridapoly.edu>    |  \`-\   \ |  o       #
 #                                                       |---\  \   `|  l       #
 #    Created: 2017/11/06 09:01:29 by cshepard6055       | ` .\  \   |  y       #
-#    Updated: 2017/11/06 17:09:40 by cshepard6055       -------------          #
+#    Updated: 2017/11/06 20:32:14 by cshepard6055       -------------          #
 #                                                                              #
 # **************************************************************************** #
 
 # set vars
 cr=`echo $'\n.'`
 cr=${cr%.}
-shell_config="~/.$(which $SHELL | cut -c6-11)rc"
+shell_config="$HOME/.$(which $SHELL | cut -c6-9)rc"
+
+# in special case of bash
+if [ $(which $SHELL) = "/bin/bash" ]
+then
+    shell_config=".bashrc"
+fi
+
+# in special case of tcsh
+if [ $(which $SHELL) = "/bin/tcsh" ]
+then
+    shell_config=".tcshrc"
+fi
 
 echo "This installs pathogen for vim, and configures your header. "
 
@@ -40,17 +53,24 @@ echo "execute pathogen#infect()" >> ~/.vimrc
 echo "\tsyntax on:" >> ~/.vimrc
 echo "\tfiletype plugin indent on" >> ~/.vimrc
 
-# create || overwrite .vimrc
-if [ $bc = "C" ] || [ $bc = "c" ]
+# create or overwrite .vimrc
+if [ $bc ]
 then
-    echo "If you have a .vimrc, it will be reset. (2 seconds)"
-    sleep 2
-    cp .vimrc ~/.vimrc
+    if [ $bc = "C" ] || [ $bc = "c" ]
+    then
+        echo "If you have a .vimrc, it will be reset. (2 seconds)"
+        sleep 2
+        cp .vimrc ~/.vimrc
+    fi
 fi
 
 # install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# install header
+mkdir -p ~/.vim/plugin
+cp plugin/poly-header.vim ~/.vim/plugin
 
 touch $shell_config
 

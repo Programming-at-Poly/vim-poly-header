@@ -17,7 +17,7 @@ set background=dark                             " dark background!
 if exists("$DISPLAY") " in X11
     set t_Co=256
     " colorscheme monokai
-    colorscheme solarized
+    " colorscheme solarized
     " colorscheme jellybeans
     let airline_powerline_fonts=1
     let airline_theme='tomorrow'

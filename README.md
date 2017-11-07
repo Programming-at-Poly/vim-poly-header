@@ -27,12 +27,6 @@ git clone https://github.com/polyprogrammingclub/vim-poly-header
 cd vim-poly-header
 cp plugin/poly-header.vim ~/.vim/plugin
 
-# MAIL environment var change for the lazy
-# replace "myaddress@floridapoly.edu" with your email address
-echo "export MAIL=myaddress@floridapoly.edu" >> ~/.cshrc
-echo "export MAIL=myaddress@floridapoly.edu" >> ~/.zshrc
-echo "export MAIL=myaddress@floridapoly.edu" >> ~/.bashrc
-
 # in ssh when working in ember
 echo "export MAIL=$(whoami)@floridapoly.edu" >> ~/.bashrc
 ```
