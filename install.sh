@@ -31,7 +31,7 @@ fi
 echo "This installs pathogen for vim, and configures your header. "
 
 while true; do
-    read -p "Do you wish to do this? $cr" yn
+    read -p "Do you wish to do this? [y/n] $cr" yn
     case $yn in
         [Yy]* ) break;;
         [Nn]* ) exit;;
