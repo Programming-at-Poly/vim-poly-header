@@ -139,5 +139,3 @@ nnoremap <silent> <leader>[x :set background=dark<cr>:colorscheme xoria256<cr>:A
 
 " vim: foldmethod=marker
 execute pathogen#infect()
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
