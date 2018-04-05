@@ -50,8 +50,6 @@ then
 fi
 
 echo "execute pathogen#infect()" >> ~/.vimrc
-echo "\tsyntax on:" >> ~/.vimrc
-echo "\tfiletype plugin indent on" >> ~/.vimrc
 
 # create or overwrite .vimrc
 if [ $bc ]
