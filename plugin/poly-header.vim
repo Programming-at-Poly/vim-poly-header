@@ -28,7 +28,7 @@ let s:length	= 80
 let s:margin	= 5
 
 let s:types		= {
-			\'\.c$\|\.h$\|\.cc$\|\.hh$\|\.cpp$\|\.java$\|\.hpp$\|\.php$\|\.sql$\|\.go':
+			\'\.c$\|\.h$\|\.cc$\|\.hh$\|\.cpp$\|\.java$\|\.hpp$\|\.php$\|\.sql$\|\.glsl$\|\.go':
 			\['/*', '*/', '*'],
 			\'\.htm$\|\.html$\|\.xml$':
 			\['<!--', '-->', '*'],
