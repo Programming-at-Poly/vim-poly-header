@@ -52,11 +52,6 @@ set vb t_vb=                                    " disable any beeps or flashes o
 set nosplitbelow                                " horizontal splits open above (default)
 set splitright                                  " vertical splits open to the right"
 
-if exists('+colorcolumn')                       " mark the 80 char style limit
-  set colorcolumn=80
-else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-endif
 " }}}
 
 " *undo* {{{
